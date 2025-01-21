@@ -21,6 +21,7 @@ const Chat = () => {
   const inputRef = useRef<HTMLInputElement | null>(null);
   const auth = useAuth();
   const [chatMessages, setChatMessages] = useState<Message[]>([]);
+  const [isAnswerComing, setIsAnswerComing] = useState(false);
   const handleSubmit = async () => {
     if (!inputRef.current?.value?.trim?.()?.length) return;
     const content = inputRef.current?.value?.trim() as string;
@@ -39,6 +40,7 @@ const Chat = () => {
     }
     const updatedChatsLength = chatMessages.length;
     const sendNewPromt = async () => {
+      setIsAnswerComing(true);
       const chatData = await sendChatRequest(content);
 
       const decoder = new TextDecoder("utf-8");
@@ -74,6 +76,7 @@ const Chat = () => {
         ...prev.slice(0, -1),
         { role: "assistant", content: streamedText },
       ]);
+      setIsAnswerComing(false);
     };
     sendNewPromt();
   }, [chatMessages]);
@@ -245,6 +248,7 @@ const Chat = () => {
                 handleSubmit();
               }
             }}
+            disabled={isAnswerComing}
           />
           <IconButton onClick={handleSubmit} sx={{ color: "white", mx: 1 }}>
             <IoMdSend />
