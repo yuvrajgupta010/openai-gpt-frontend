@@ -29,11 +29,11 @@ This project is an AI chatbot developed using Vite, TypeScript, React, Node.js, 
 **Cloud:** DigitalOcean
 
 ## Features
-Responsive Interface: Utilized Material-UI for a modern and aesthetically pleasing design.
-Interactive Elements: Integrated React Hot Toast, React Icons, and React Type Animation for enhanced user engagement.
-Security: Secured user interactions with JWT and bcrypt.
-Database Integration: Employed Mongoose for seamless integration with MongoDB.
-Validation: Implemented Express Validator for robust request validation.
-Middleware: Utilized CORS middleware for secure sharing.
-Logging: Leveraged Morgan for HTTP request logging.
-Environment Management: Used Dotenv for environment variable management.
+- Responsive Interface: Utilized Material-UI for a modern and aesthetically pleasing design.
+- Interactive Elements: Integrated React Hot Toast, React Icons, and React Type Animation for enhanced user engagement.
+- Security: Secured user interactions with JWT and bcrypt.
+- Database Integration: Employed Mongoose for seamless integration with MongoDB.
+- Validation: Implemented Express Validator for robust request validation.
+- Middleware: Utilized CORS middleware for secure sharing.
+- Logging: Leveraged Morgan for HTTP request logging.
+- Environment Management: Used Dotenv for environment variable management.
