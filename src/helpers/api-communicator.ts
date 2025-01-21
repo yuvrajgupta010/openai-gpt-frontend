@@ -1,4 +1,5 @@
 import axios from "axios";
+import { BASE_URL } from "../main";
 export const loginUser = async (email: string, password: string) => {
   const res = await axios.post("/user/login", { email, password });
   if (res.status !== 200) {
@@ -31,7 +32,7 @@ export const checkAuthStatus = async () => {
 };
 
 export const sendChatRequest = async (message: string) => {
-  const response = await fetch("http://localhost:5000/api/v1/chat/new", {
+  const response = await fetch(`${BASE_URL}/chat/new`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
