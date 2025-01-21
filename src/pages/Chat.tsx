@@ -213,7 +213,6 @@ const Chat = () => {
         >
           <PerfectScrollbar>
             {chatMessages.map((chat, index) => (
-              //@ts-expect-error
               <ChatItem content={chat.content} role={chat.role} key={index} />
             ))}
           </PerfectScrollbar>

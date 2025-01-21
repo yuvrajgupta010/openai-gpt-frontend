@@ -1,4 +1,3 @@
-import React from "react";
 import { Box, Avatar, Typography } from "@mui/material";
 import { useAuth } from "../../context/AuthContext";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -57,6 +56,7 @@ const ChatItem = ({
           messageBlocks.length &&
           messageBlocks.map((block) =>
             isCodeBlock(block) ? (
+              // @ts-expect-error workaround
               <SyntaxHighlighter style={coldarkDark} language="javascript">
                 {block}
               </SyntaxHighlighter>
@@ -88,6 +88,7 @@ const ChatItem = ({
           messageBlocks.length &&
           messageBlocks.map((block) =>
             isCodeBlock(block) ? (
+              // @ts-expect-error workaround
               <SyntaxHighlighter style={coldarkDark} language="javascript">
                 {block}
               </SyntaxHighlighter>
