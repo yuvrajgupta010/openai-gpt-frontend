@@ -18,11 +18,42 @@ This project is an AI chatbot developed using Vite, TypeScript, React, Node.js, 
 ![signup-ui.png](https://github.com/yuvrajgupta010/openai-gpt-frontend/blob/main/public/screenshots/signup-ui.png?raw=true)
 
 <!-- Add more screenshots and captions as needed -->
+
+## Want a look on backend repo ?
+
+[https://github.com/yuvrajgupta010/openai-gpt-backend](https://github.com/yuvrajgupta010/openai-gpt-backend)
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/yuvrajgupta010/openai-gpt-frontend.git
+```
+
+Go to the project directory
+
+```bash
+  cd openai-gpt-frontend
+```
+
+Install dependencies
+
+```bash
+  yarn install
+```
+
+Start the project
+
+```bash
+  npm run dev
+```
+
 ## Tech Stack
 
 **Client:** Vite, TypeScript, React, Material-UI, Axios, React Router, React Hot Toast, React Icons, React Type Animation
 
-**Backend:** Node.js, Express, MongoDB, JWT, bcrypt, Mongoose, Express Validator, CORS, Morgan, Dotenv
+**Backend:** Node.js, Express, OpenAI,MongoDB, JWT, bcrypt, Mongoose, Express Validator, CORS, Morgan, Dotenv
 
 **Database:** Mongo DB
 
