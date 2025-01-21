@@ -1,4 +1,4 @@
-# MERN-GPT
+# OpenAI GPT
 
 ![home-ui.png](https://github.com/yuvrajgupta010/openai-gpt-frontend/blob/main/public/screenshots/home-ui.png?raw=true)
 
