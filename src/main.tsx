@@ -9,7 +9,7 @@ import { Toaster } from "react-hot-toast";
 import axios from "axios";
 import "react-perfect-scrollbar/dist/css/styles.css";
 
-export const BASE_URL: string = "https://api.openai-gpt.yuvrajgupta.in/v1";
+export const BASE_URL: string = "https://api-openai-gpt.yuvrajgupta.in/v1";
 axios.defaults.baseURL = BASE_URL;
 axios.defaults.withCredentials = true;
 const theme = createTheme({
