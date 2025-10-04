@@ -27,7 +27,7 @@ const Logo = () => {
           textShadow: "2px 2px 20px #000",
         }}
       >
-        <span style={{ fontSize: "20px" }}>OpenAI</span> GPT
+        <span style={{ fontSize: "20px" }}>Build on OpenAI API</span>
       </Typography>
     </div>
   );
