@@ -16,6 +16,7 @@ const Footer = () => {
           <span> Yuvraj Gupta</span>
           💘
         </p>
+        <span>This is an independent project built by Yuvraj Gupta using the OpenAI API. It is not affiliated with or endorsed by OpenAI.</span>
       </div>
     </footer>
   );
